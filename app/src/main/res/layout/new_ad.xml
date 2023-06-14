@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    android:background="#cccccc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:text="انتخاب عکس برای اگهی\n\nآگهی های عکس دار بیشتر دیده می شوند ." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/select_image" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/select_image" />
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/select_image" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <EditText
+                        android:id="@+id/title_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:digits="ا	ب	پ	ت	ث	ج
+چ	‌ ح	خ	د	ذ	ر ئ
+ز	‌ ژ	س	‌ ش	ص	ض
+ط	ظ	ع	غ	ف	ق
+ک	گ	ل	م	ن	  و
+ه	 ء	آ	اً	هٔ	ةی0123456789 ._-"
+                        android:hint="عنوان(زبان کیبورد خود رافارسی کنید)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <EditText
+                        android:id="@+id/description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:hint="توضیحات" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"></Spinner>
+
+
+                <Spinner
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+
+                </Spinner>
+
+                <Spinner
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+
+                </Spinner>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/district_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <EditText
+                        android:id="@+id/district_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:digits="ا	ب	پ	ت	ث	ج
+چ	‌ ح	خ	د	ذ	ر
+ز	‌ ژ	س	‌ ش	ص	ض
+ط	ظ	ع	غ	ف	ق
+ک	گ	ل	م	ن	و
+ه	 ء	آ	اً	هٔ	0ةی123456789"
+                        android:hint="محله" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/spinner_price_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                </Spinner>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/price_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp">
+
+                    <EditText
+                        android:id="@+id/price_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:digits="1234567890"
+                        android:hint="قیمت" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/submit_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:padding="14dp"
+                    android:gravity="center"
+                    android:background="#e74c3c"
+                    android:textSize="26dp"
+                    android:textColor="#ffffff"
+                    android:text="ثبت اگهی" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

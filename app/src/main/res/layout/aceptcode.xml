@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#cccccc"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:text="کد ارسال شده به شماره موبایل را وارد کنید"
+                    android:hint="نام و نام خانوادگی"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#222222" />
+
+                <EditText
+                    android:id="@+id/sbt_code_taed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="کد را وارد کنید"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+
+
+                <!-- Login Button -->
+
+                <Button
+                    android:id="@+id/sbt_btnLogin_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="ورود"
+                    android:textColor="@color/btn_login" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

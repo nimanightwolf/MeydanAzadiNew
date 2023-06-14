@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    tools:ignore="MissingPrefix">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="135dp"
+            android:layout_height="110dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/no_photo" />
+
+        <ImageView
+            android:id="@+id/image_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/icon_delete_image" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageview_icon_search"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shap_edittext"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_search_searchview" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/imageview_icon_search"
+                android:background="@drawable/shap_edittext"
+                android:gravity="right"
+                android:layoutDirection="rtl"
+                android:searchIcon="@null"
+                android:textDirection="rtl"
+                app:iconifiedByDefault="false"
+                app:queryHint="جستجو"
+                app:searchHintIcon="@drawable/ic_search_searchview"
+                app:searchIcon="@null" />
+        </RelativeLayout>
+
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+
+
+            app:tabIndicatorColor="@color/colorblack">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpPager_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textDirection="rtl">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

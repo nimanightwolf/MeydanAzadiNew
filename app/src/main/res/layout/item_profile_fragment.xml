@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="6dp"
+    android:layout_marginLeft="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:textColor="@color/colorblack"
+            android:id="@+id/tv_time_and_date_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:text="23 اسفند 1398\n 22:35"
+            android:textSize="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <LinearLayout
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="29"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorblack"
+                    android:id="@+id/tv_profile_name_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="right"
+                    android:text="نیما حیدری"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_marginTop="-4dp"
+                    android:id="@+id/tv_profile_bio_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="nima.bio"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile_image_fragment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_oval"
+                android:gravity="right"
+                android:src="@drawable/my_photo"
+                android:text="انتخاب عکس"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:linksClickable="true"
+        android:justificationMode="inter_word"
+        android:textColor="@color/colorblack"
+        android:id="@+id/tv_text_profile_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:text="ایسنا/ کرملین در بیانیه‌ای اظهار کرد: ولادیمیر پوتین، رییس جمهور روسیه و آنگلا مرکل، صدراعظم آلمان با یکدیگر تماسی تلفنی داشتند. پوتین و مرکل به مناسبت هفتاد و پنجمین سالگرد رهایی اروپا و جهان از فاشیسم و پایان جنگ جهانی دوم به یکدیگر تبریک گفتند. این روز معنایی نمادین و ویژه برای آلمان و روسیه دارد." />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_comment_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile_comment" />
+
+            <TextView
+                android:textColor="@color/colorblack"
+                android:id="@+id/tv_number_comment_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="10"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/linear_like_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/linear_comment_profile"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_heart" />
+
+            <TextView
+                android:textColor="@color/colorblack"
+                android:id="@+id/tv_number_like_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="256"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_retweet_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:textColor="@color/colorblack"
+                android:id="@+id/tv_number_retweet_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="256"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_retweet" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

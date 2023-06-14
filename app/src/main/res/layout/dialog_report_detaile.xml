@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <RadioButton
+            android:id="@+id/radio_report_aklaghi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محتوای نامناسب اخلاقی "/>
+        <RadioButton
+            android:id="@+id/radio_report_tohin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محتوای توهین امیز "/>
+
+    </RadioGroup>
+
+</LinearLayout>

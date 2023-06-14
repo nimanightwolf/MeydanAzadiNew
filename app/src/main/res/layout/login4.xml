@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fitsSystemWindows="true">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+    <!--        app:elevation="0dp">-->
+
+    <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:layout_scrollFlags="scroll|enterAlways">-->
+
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--                android:id="@+id/toolbar"-->
+    <!--                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"-->
+    <!--                android:layout_width="match_parent"-->
+
+    <!--                android:layout_height="?attr/actionBarSize"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:background="@color/primary"-->
+    <!--                android:gravity="center"-->
+    <!--                android:layoutDirection="rtl"-->
+    <!--                android:textDirection="rtl"-->
+    <!--                app:theme="@style/ThemeOverlay.AppCompat.Light">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/toolbar_title"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginTop="8dp"-->
+    <!--                        android:text="Toolbar Title"-->
+    <!--                        android:textColor="#000000"-->
+    <!--                        android:textSize="24dp"-->
+    <!--                        android:visibility="gone" />-->
+
+
+    <!--                </LinearLayout>-->
+
+    <!--            </androidx.appcompat.widget.Toolbar>-->
+
+    <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".message.InsertTicketActivity"
+        tools:showIn="@layout/login3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="140dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible">
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/et_mobail_text"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:background="#ffffff"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:hint="شماره تلفن را وارد کنید"-->
+                <!--                    android:inputType="phone"-->
+                <!--                    android:maxLength="11"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:singleLine="true"-->
+                <!--                    android:textColor="#222222"-->
+                <!--                    android:textColorHint="#999999" />-->
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/layout_pass_btn_send"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/et_password_sender"-->
+                <!--                        android:layout_width="fill_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginBottom="10dp"-->
+                <!--                        android:background="#ffffff"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:hint="کد تاییدیه را وارد کنید"-->
+                <!--                        android:inputType="number"-->
+                <!--                        android:padding="10dp"-->
+                <!--                        android:singleLine="true"-->
+                <!--                        android:textColor="#222222"-->
+                <!--                        android:textColorHint="#999999" />-->
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/btn_send_pass"-->
+                <!--                        android:layout_width="fill_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="20dip"-->
+                <!--                        android:background="@color/colorPrimaryDark"-->
+                <!--                        android:text="ارسال کد"-->
+                <!--                        android:textColor="@color/btn_login" />-->
+                <!-- Login Button -->
+
+
+                <!--                </LinearLayout>-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn_send_mobile"-->
+                <!--                    android:layout_width="fill_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="20dip"-->
+                <!--                    android:background="@color/colorPrimaryDark"-->
+                <!--                    android:text="دریافت کد"-->
+                <!--                    android:textColor="@color/btn_login" />-->
+
+
+                <!-- Link to Login Screen -->
+
+                <!--<Button-->
+                <!--android:id="@+id/btnLinkToRegisterScreen"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="40dip"-->
+                <!--android:background="@null"-->
+                <!--android:text="ایا حساب کاربری نداید؟ ساخت حساب کاربری"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textSize="15dp" />-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="330dp"
+        android:src="@drawable/icon_meydane_azadi"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_dark"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginHorizontal="-80dp"
+            android:layout_marginBottom="-150dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:visibility="gone"
+            app:cardBackgroundColor="#8A8A8A"
+            app:cardCornerRadius="2000dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+
+                    android:id="@+id/img_text_wellcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/icon_text_wellcome"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/linear_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="16dp">
+
+
+                        <EditText
+                            android:id="@+id/et_mobail_text"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:hint="شماره موبایل خود را وارد کنید"
+                            android:inputType="phone"
+                            android:maxLength="11"
+
+                            android:textSize="14dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="12dp">
+
+                        <TextView
+                            android:id="@+id/btn_send_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ارسال کد"
+                            android:textColor="@color/colorblack"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_small"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginBottom="-80dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#9A9A9A"
+            app:cardCornerRadius="120dp" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_send_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-100dp"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        app:cardBackgroundColor="#9A9A9A"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_pass_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <com.alimuzaffar.lib.pin.PinEntryEditText
+                        android:id="@+id/et_password_sender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:pinLineColors="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_zaman_baghi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/btn_send_again_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ارسال مجدد کد"
+                            android:textColor="@color/white"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_text_pass_sended_to_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="کد امنیتی ارسال شده به شماره ..... را وارد کنید"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_name_code_moref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:id="@+id/layout_name_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                    <EditText
+
+                        android:id="@+id/et_name_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:hint="نام و نام خانوادگی خود را وارد کنید"
+                        android:singleLine="true"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="#999999" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:id="@+id/layout_code_moarf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                    <EditText
+                        android:id="@+id/et_code_moarf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:hint="کد معرف را وارد کنید(اختیاری)"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#222222"
+                        android:textColorHint="#999999" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:background="@color/white"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:id="@+id/btn_send_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ورود"
+                    android:textColor="@color/colorblack"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|left"
+        android:layout_margin="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_back_white" />
+</FrameLayout>
+
+
+
+
+

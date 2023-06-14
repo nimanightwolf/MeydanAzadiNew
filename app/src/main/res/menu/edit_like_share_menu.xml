@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/editic"
+        android:title="اشتراک گذاری"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="always"
+
+        ></item>
+
+    <item
+        android:id="@+id/bookmark"
+        android:title="علاقه مندی"
+        android:icon="@drawable/bookmark0"
+        app:showAsAction="always"
+
+        ></item>
+
+    <item
+        android:id="@+id/share"
+        android:title="اشتراک گذاری"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always"
+
+        ></item>
+
+
+
+</menu>

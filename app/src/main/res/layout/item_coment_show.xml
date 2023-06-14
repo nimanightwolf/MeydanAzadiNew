@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sample1"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Bottom View Start-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#66252525"
+            android:padding="10dp"
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="160dp"
+            android:weightSum="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:text="برای پاسخ دادن به چپ بکشید و رها کنید"
+                android:textSize="12dp" />
+            <!--What you want to show-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv1"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/coment_user_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/coment_date"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textViewOptions"
+                    android:textColor="@color/input_register_hint"
+                    android:textSize="13dp" />
+                <TextView
+
+                    android:id="@+id/textViewOptions"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="&#8942;"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <com.hendraanggrian.widget.SocialTextView
+                    android:id="@+id/coment_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorblack"
+                    app:hashtagColor="@color/blue"
+                    app:mentionColor="@color/blue"
+                    app:socialFlags="hashtag|mention"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="12dp"
+                android:layout_gravity="left"
+                android:id="@+id/tv_report"
+                android:text="گزارش محتوای نامناسب"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!--What you want to show in SurfaceView-->
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

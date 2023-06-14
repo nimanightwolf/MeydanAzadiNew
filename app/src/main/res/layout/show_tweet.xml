@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear_main_show_tweet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_show_tweet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:layout_weight="3"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewOptions_main_view"
+                                    android:layout_width="25dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                                    android:text="&#8942;"
+                                    android:textAppearance="?android:textAppearanceLarge"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tv_time_and_date_fragment"
+                                    android:layout_width="87dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="top"
+                                    android:layout_marginLeft="16dp"
+                                    android:gravity="left"
+                                    android:text=""
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linear_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal"
+                                android:weightSum="30">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_weight="29"
+                                    android:gravity="left"
+                                    android:orientation="vertical"
+                                    tools:ignore="NestedWeights,RtlHardcoded">
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_name_fragment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="right"
+                                        android:text=""
+                                        android:textColor="@color/colorblack"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_user_name_fragment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="-4dp"
+                                        android:gravity="right"
+                                        android:text=""
+                                        android:textSize="12dp"
+                                        tools:ignore="HardcodedText,SpUsage" />
+
+                                </LinearLayout>
+
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image_profile_image_fragment"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/icon_user"
+                                    android:gravity="right"
+                                    android:text="انتخاب عکس"
+                                    android:textColor="#000000"
+                                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_reweeted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="8dp"
+                            android:gravity="right"
+                            android:text="ریتویت شده از نیما حیدری"
+                            android:textColor="@color/color_retweet"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginVertical="8dp"
+                            app:cardCornerRadius="16dp">
+
+                            <com.glide.slider.library.SliderLayout
+                                android:id="@+id/slider"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                tools:ignore="MissingConstraints" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.hendraanggrian.widget.SocialTextView
+                            android:id="@+id/tv_text_profile_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="all"
+                            android:justificationMode="inter_word"
+                            android:linksClickable="true"
+                            android:minHeight="70dp"
+                            android:paddingHorizontal="16dp"
+                            android:text=""
+                            android:textColor="@color/colorblack"
+                            app:hashtagColor="@color/blue"
+                            app:mentionColor="@color/blue"
+
+                            app:socialFlags="hashtag|mention" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/linear_comment_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/img_comment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_profile_comment"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/tv_number_comment_profile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="10dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_like_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/linear_comment_profile"
+                                android:gravity="center"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                tools:ignore="RtlHardcoded">
+
+                                <ImageView
+                                    android:id="@+id/img_like"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_action_heart"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/tv_number_like_profile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="10dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear_retweet_profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <TextView
+                                    android:id="@+id/tv_number_retweet_profile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="10dp"
+                                    tools:ignore="HardcodedText,SpUsage" />
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_action_retweet"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="کامنت ها"
+                    android:textColor="@color/colorblack"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+
+
+                android:layout_marginRight="16dp"
+                android:minHeight="260dp"
+
+                android:paddingBottom="60dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:id="@+id/layout_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+
+        android:background="#fff"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/edittext_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="@string/input_comment"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textColorHint="#676666" />
+
+        <ImageButton
+            android:id="@+id/btn_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_send_black_24dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_follow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="4dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/image_user_follow"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/card_image"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:id="@+id/linear_follow_btn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <Button
+
+                android:id="@+id/btn_followed"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/backgrand_followed"
+                android:gravity="center"
+                android:text="دنبال کرده اید"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_followering"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/backgrand_followering"
+                android:gravity="center"
+                android:text="دنبال کنید"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:visibility="gone" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_name_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="نیما حیدری"
+                    android:textColor="@color/colorblack" />
+
+
+                <TextView
+                    android:id="@+id/tv_user_name_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text=""
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

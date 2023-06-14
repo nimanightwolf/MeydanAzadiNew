@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <activity
+        android:id="@+id/navigation_search"
+        android:name="com.app.dadepardazan.meydanazadi.view_pager.search.SearchActivity"
+        android:label="جستجو"
+        tools:layout="@layout/search_activity" >
+    </activity>
+
+    <activity
+        android:id="@+id/navigation_today_news"
+        android:name="com.app.dadepardazan.meydanazadi.AdListActivity"
+        android:label="جستجو"
+        tools:layout="@layout/ad_list" >
+    </activity>
+
+    <activity
+        android:id="@+id/navigation_home"
+        android:name="com.app.dadepardazan.meydanazadi.all_tweet.AllTweetActivity"
+        android:label="میدان ازادی من"
+        tools:layout="@layout/activity_all_tweet" />
+</navigation>

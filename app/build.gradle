@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+    defaultConfig {
+        applicationId "com.app.dadepardazan.meydanazadi"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 16
+        versionName "3.9"
+        multiDexEnabled true //add this line
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    //noinspection DuplicatePlatformClasses
+    implementation 'org.apache.httpcomponents:httpclient:4.5'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation "com.github.bumptech.glide:glide:4.9.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.9.0"
+    implementation "com.github.firdausmaulan:GlideSlider:1.5.1"
+    implementation 'com.scottyab:aescrypt:0.0.1'
+
+    implementation 'com.github.d-max:spots-dialog:0.4@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+    implementation 'com.github.florent37:tutoshowcase:1.0.1'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.scottyab:aescrypt:0.0.1'
+    implementation 'com.koushikdutta.ion:ion:2.+'
+//for tag and mention
+    implementation 'com.hendraanggrian:socialview-core:0.17'
+    implementation 'com.hendraanggrian:socialview-commons:0.17'
+    implementation 'com.github.hendraanggrian:socialview:0.1'
+    //font
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    //dialog
+    implementation 'com.yarolegovich:lovely-dialog:1.1.1'
+    //skelet
+    implementation 'com.ethanhua:skeleton:1.1.2'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+    //edittext input
+    implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6') {
+        // Exclude is only needed if you already have
+        // androidx.appcompat as a dependency in your app.
+        exclude group: 'androidx.appcompat', module: 'appcompat'
+    }
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    //get model of phone
+    implementation 'com.jaredrummler:android-device-names:2.0.0'
+    //image zoom
+    implementation 'com.aghajari.zoomhelper:ZoomHelper:1.0.1'
+    //persion date
+    implementation 'com.github.aliab:Persian-Date-Picker-Dialog:1.5.2'
+
+    implementation('com.mikepenz:materialdrawer:5.9.5@aar') {
+        transitive = true
+    }
+    //dialog
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    //textfilde like flutter
+
+
+}

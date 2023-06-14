@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_marginTop="?actionBarSize">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/tv_profile_code_davat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="کد دعوت شما : "
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:cardBackgroundColor="@color/color_background_button"
+                        app:cardCornerRadius="4dp">
+
+                        <TextView
+                            android:drawableLeft="@drawable/ic_vector_tasvieh"
+                            android:id="@+id/tv_show_tasvieh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="تسویه حساب"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        app:cardBackgroundColor="@color/color_background_button"
+                        app:cardCornerRadius="4dp">
+
+                        <TextView
+                            android:drawableLeft="@drawable/ic_action_share2"
+                            android:id="@+id/tv_profile_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="اشتراک گذاری"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativ_layout_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="246dp"
+                    android:background="@drawable/line_shape2"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_image"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/icon_user"
+                                android:text="انتخاب عکس"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="left|bottom"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/icon_add_image" />
+                        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                        <TextView
+                            android:id="@+id/tv_profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_profile_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="40dp"
+                        app:cardElevation="2dp">
+
+                        <TextView
+                            android:lineSpacingExtra="-4dp"
+                            android:id="@+id/profile_number_davatSode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="دعوت شده"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="40dp"
+                        app:cardElevation="2dp">
+
+                        <TextView
+                            android:lineSpacingExtra="-4dp"
+                            android:id="@+id/profile_number_emtiaz"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="امتیاز
+                     90"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="153dp"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="20dp">
+
+                    <TextView
+                        android:lineSpacingExtra="-4dp"
+                        android:id="@+id/profile_number_taiidshode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="تایید شده"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:gravity="right"
+                    android:text="ویرایش اطلاعات"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:id="@+id/edit_profile_name_family"
+                        android:layout_width="338dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="نام و نام خانوادگی"
+                        android:padding="4dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:id="@+id/edit_profile_username"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shap_edittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                        android:hint="نام کاربری"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:maxLength="120"
+                        android:id="@+id/edit_profile_bio"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@+id/edit_profile_username"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="بیو"
+                        android:padding="4dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLength="35"
+                        android:id="@+id/edit_profile_education"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="تحصیلات"
+
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        android:id="@+id/edit_profile_job"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@+id/edit_profile_education"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="شغل"
+                        android:padding="4dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="تاريخ تولد" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_profile_day"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="روز"
+                        android:padding="4dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_profile_month"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@+id/tv_profile_day"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="ماه"
+                        android:padding="4dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_profile_year"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_toLeftOf="@+id/tv_profile_month"
+                        android:background="@drawable/shap_edittext"
+                        android:hint="سال"
+                        android:padding="4dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="#0d96db"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="4dp"
+                    android:text="ذخیره"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarprofile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:elevation="8dp"
+        android:gravity="center"
+        app:popupTheme="@style/AppTheme.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="130dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_toolbar" />
+
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_back_black" />
+        </RelativeLayout>
+
+
+        <requestFocus />
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

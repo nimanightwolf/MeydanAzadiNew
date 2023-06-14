@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/nesscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/ad_title_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="عنوان اگهی اینجا درج شود"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/colorline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal"
+                    android:textDirection="ltr">
+
+                    <TextView
+                        android:id="@+id/ad_category_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        android:textDirection="rtl"
+                        android:textSize="14dp" />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+
+                        android:id="@+id/ad_manba_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="دسته بندی"
+                        android:textColor="#000000"
+                        android:textDirection="rtl"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layoutDirection="rtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                       android:layout_marginRight="10dp"
+                        android:layout_width="20dp"
+                        android:src="@drawable/icon_study_time"
+                        android:scaleType="fitXY"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:id="@+id/ad_time_study_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="زمان مطالعه ... دقیقه"
+                        android:textColor="#000000"
+                        android:textDirection="rtl"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ad_manba_link_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="right"
+                    android:visibility="gone" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorline" />
+                <!--<com.ms.square.android.expandabletextview.ExpandableTextView-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/expand_text_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--expandableTextView:maxCollapsedLines="14"-->
+                <!--expandableTextView:animDuration="200">-->
+                <!--<TextView-->
+                <!--android:justificationMode="inter_word"-->
+                <!--android:id="@id/expandable_text"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colordescription"-->
+                <!--android:textSize="18dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--/>-->
+                <!--<ImageButton-->
+
+                <!--android:id="@id/expand_collapse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="14dp"-->
+                <!--android:layout_gravity="right|bottom"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--</com.ms.square.android.expandabletextview.ExpandableTextView>-->
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/ad_description_show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:justificationMode="none"
+                    android:textColor="@color/colordescription"
+                    android:textSize="18sp"
+                    app:showTrimExpandedText="true"
+                    app:trimLines="12"
+                    app:trimMode="trimModeLine" />
+
+
+                <Button
+                    android:id="@+id/btn_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    tools:ignore="WebViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <VideoView
+                        android:id="@+id/video_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="acawca "
+                        android:textSize="50dp"
+                        android:visibility="gone" />
+
+                    <VideoView
+                        android:id="@+id/videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/ad_like_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_action_star"
+                            android:textColor="#111111" />
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/number_like_home_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:textColor="#111111"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_coment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ad_coment_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_profile_comment"
+                            android:textColor="#111111" />
+
+                        <TextView
+                            android:id="@+id/number_coment_home_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:textColor="#111111"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:backgroundTint="@color/colorblack"
+                    android:numStars="5"
+                    android:progressTint="@color/colorblack"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="به این خبر امتیاز دهید"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_advertising"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/colorline" />
+
+                    <ImageView
+                        android:id="@+id/imageview_advertising"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:foregroundGravity="center"
+                        android:minHeight="250dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/texview_advertising"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#a9a8a8"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorline" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/card_recycler_view_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e7e7e7"
+                    android:elevation="0dp"
+                    android:padding="8dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:layoutDirection="ltr">
+
+        <Button
+            android:id="@+id/send_coment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ارسال" />
+
+
+        <EditText
+
+            android:id="@+id/edittext_coment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/send_coment"
+            android:layout_toStartOf="@id/send_coment"
+
+            android:backgroundTint="@color/input_register_hint"
+            android:hint="@string/input_comment"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/input_register_hint"
+            android:theme="@style/AppTheme.Edittext" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/call_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="20dp"
+        android:src="@drawable/icon_share"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+<!--            <com.daimajia.slider.library.SliderLayout-->
+<!--                android:id="@+id/slider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="400dp" />-->
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:ignore="MissingConstraints" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:background="@drawable/background_gradient"
+                    >
+                    <TextView
+                        android:fontFamily="@font/iransans_bold"
+
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logo_type_meydanazadi"
+                        android:textColor="@color/white"/>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.NoActionBar">
+
+                <requestFocus />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

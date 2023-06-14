@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_cnontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+
+            android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="20dp"
+        android:src="@drawable/plus"
+        android:visibility="gone">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="اطلاعاتی برای نمایش وجود ندارد"
+        android:textColor="#000"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_send_new_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/color_float_button"
+        android:elevation="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_send_new_tweet"
+        android:tintMode="screen"
+        android:visibility="visible"
+
+        app:backgroundTint="@color/color_float_button"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabSize="auto"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toTopOf="@+id/navigationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/color_float_button"
+
+        />
+<LinearLayout
+    android:layout_gravity="top"
+    android:id="@+id/linear_no_follower"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_user"/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:textSize="16dp"
+        android:text="شما هیچ کاربری را دنبال نکرده اید"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="@color/colorblack"
+        android:textSize="16dp"
+        android:text="کاربران پیشنهادی به شما"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+
+        android:id="@+id/recycler_suggested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

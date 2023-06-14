@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="match_parent"
+
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Toolbar Title"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".message.InsertTicketActivity"
+        tools:showIn="@layout/login3">
+
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="140dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/et_mobail_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:hint="شماره تلفن را وارد کنید"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#999999" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_name_code_moref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_name_user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="نام و نام خانوادگی خود را وارد کنید"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <EditText
+                    android:id="@+id/et_code_moarf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="کد معرف را وارد کنید(اختیاری)"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_pass_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_password_sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="کد تاییدیه را وارد کنید"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <Button
+                    android:id="@+id/btn_send_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="ارسال کد"
+                    android:textColor="@color/btn_login" />
+                <!-- Login Button -->
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorPrimaryDark"
+                android:text="دریافت کد"
+                android:textColor="@color/btn_login" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/tv_zaman_baghi"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_send_again_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorPrimaryDark"
+                android:text="ارسال مجدد کد"
+                android:textColor="@color/btn_login" />
+            <!-- Link to Login Screen -->
+
+            <!--<Button-->
+            <!--android:id="@+id/btnLinkToRegisterScreen"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="40dip"-->
+            <!--android:background="@null"-->
+            <!--android:text="ایا حساب کاربری نداید؟ ساخت حساب کاربری"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textSize="15dp" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

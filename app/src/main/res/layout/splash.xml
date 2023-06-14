@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/backgrand_splash"
+
+
+
+    >
+
+
+    <ImageView
+        android:paddingVertical="10dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView_gif"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+
+
+        android:src="@drawable/logo_app" />
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_from_ario"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+
+
+</FrameLayout>

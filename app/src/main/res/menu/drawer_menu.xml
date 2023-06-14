@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnu_main"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="همه اگهی ها"/>
+    <item
+        android:id="@+id/mnu_new"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="ثبت اگهی"/>
+    <item
+        android:id="@+id/mnu_category"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="دسته بندی" />
+    <item
+        android:id="@+id/mnu_account"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="قفس من"/>
+    <item
+        android:id="@+id/mnu_favorite"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="علاقه مندی ها"/>
+    <item
+        android:id="@+id/mnu_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="اشتراک گذاری"/>
+
+    <item
+        android:id="@+id/mnu_feedback"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="بازخورد"/>
+
+
+</menu>

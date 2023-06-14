@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+
+                <EditText
+                    android:id="@+id/sbt_name_family"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="نام و نام خانوادگی"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <EditText
+                    android:id="@+id/sbt_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="ایمیل را وارد کنید"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <EditText
+                    android:id="@+id/sbt_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="شماره موبایل را وارد کنید"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+
+                <EditText
+                    android:id="@+id/sbt_password"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="پسورد را وارد کنید"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+                <EditText
+                    android:id="@+id/sbt_password_again"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="پسورد را مجددا وارد کنید"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+
+                <EditText
+                    android:id="@+id/sbt_code_moaref"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="کد معرف را وارد کنید(اختیاری)"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999" />
+
+
+                <!-- Login Button -->
+
+                <Button
+                    android:id="@+id/sbt_btnLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="ورود"
+                    android:textColor="@color/btn_login" />
+
+                <!-- Link to Login Screen -->
+
+                <Button
+                    android:id="@+id/Sbt_anser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@null"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

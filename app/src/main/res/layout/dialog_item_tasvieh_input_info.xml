@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="نام صاحب کارت :"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tas_dialog_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="یرای وارد کردن نام صاحب کارت کلیک کنید"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_hint_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="شماره کارت بانکی :"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tas_dialog_cardbank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="برای وارد کردن شماره کارت بانکی کلیک کنید"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_hint_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="ادرس کیف پول ریپل :"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tas_dialog_riple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="برای وارد کردن ادرس کیف پول ریپل کلیک کنید"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_hint_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="ادرس کیف پول دوج :"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tas_dialog_doje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="برای وارد کردن ادرس کیف پول دوج کلیک کنید"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_hint_white"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
